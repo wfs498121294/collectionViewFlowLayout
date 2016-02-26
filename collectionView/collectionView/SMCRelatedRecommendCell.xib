@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="gTV-IL-0wX" customClass="SMCRelatedRecommendCell">
+            <rect key="frame" x="0.0" y="0.0" width="210" height="159"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="210" height="159"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat" translatesAutoresizingMaskIntoConstraints="NO" id="D5v-hl-PDL">
+                        <rect key="frame" x="5" y="5" width="200" height="124"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="22222222" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vbU-7q-IJ2">
+                        <rect key="frame" x="0.0" y="129" width="210" height="30"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="vbU-7q-IJ2" firstAttribute="top" secondItem="D5v-hl-PDL" secondAttribute="bottom" id="0nB-k2-huK"/>
+                <constraint firstAttribute="bottom" secondItem="D5v-hl-PDL" secondAttribute="bottom" constant="30" id="3YJ-DC-GDV"/>
+                <constraint firstAttribute="trailing" secondItem="vbU-7q-IJ2" secondAttribute="trailing" id="4KO-Y5-wmH"/>
+                <constraint firstAttribute="bottom" secondItem="vbU-7q-IJ2" secondAttribute="bottom" id="8A8-PP-30c"/>
+                <constraint firstAttribute="trailing" secondItem="D5v-hl-PDL" secondAttribute="trailing" constant="5" id="Ldp-cW-swV"/>
+                <constraint firstAttribute="trailing" secondItem="D5v-hl-PDL" secondAttribute="trailing" constant="5" id="e06-c9-LZZ"/>
+                <constraint firstItem="vbU-7q-IJ2" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="l5b-C7-tyt"/>
+                <constraint firstItem="D5v-hl-PDL" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="seU-dA-c2E"/>
+                <constraint firstItem="D5v-hl-PDL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="vEb-ic-Vk9"/>
+                <constraint firstItem="D5v-hl-PDL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="yRT-mA-a49"/>
+            </constraints>
+            <size key="customSize" width="210" height="159"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="vEb-ic-Vk9"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="imageView" destination="D5v-hl-PDL" id="AOB-Kw-jNQ"/>
+                <outlet property="titleLabel" destination="vbU-7q-IJ2" id="EV9-XM-Kc1"/>
+            </connections>
+            <point key="canvasLocation" x="325" y="157.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="cat" width="223" height="242"/>
+    </resources>
+</document>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="headView" id="U6b-Vx-4bR" customClass="SMCFMSectionHeadView">
+            <rect key="frame" x="0.0" y="0.0" width="380" height="73"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="title_decorate_like" translatesAutoresizingMaskIntoConstraints="NO" id="d88-XS-IH0">
+                    <rect key="frame" x="21" y="37" width="14" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="14" id="HgC-Pj-fNa"/>
+                        <constraint firstAttribute="height" constant="14" id="c2K-F1-ehR"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="我的收藏" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K48-fK-32G">
+                    <rect key="frame" x="45" y="35" width="60" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.27058823529411763" green="0.27058823529411763" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Vr-ey-Tda">
+                    <rect key="frame" x="338" y="30" width="35" height="28"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="更多&gt;">
+                        <color key="titleColor" red="0.47058823529411764" green="0.30980392156862746" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="7Vr-ey-Tda" firstAttribute="centerY" secondItem="U6b-Vx-4bR" secondAttribute="centerY" id="4cq-sz-QJC"/>
+                <constraint firstItem="d88-XS-IH0" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="21" id="JmB-0q-Jmw"/>
+                <constraint firstItem="K48-fK-32G" firstAttribute="centerY" secondItem="d88-XS-IH0" secondAttribute="centerY" id="P9f-ws-wW9"/>
+                <constraint firstItem="K48-fK-32G" firstAttribute="leading" secondItem="d88-XS-IH0" secondAttribute="trailing" constant="10" id="Xud-1B-Cpp"/>
+                <constraint firstItem="K48-fK-32G" firstAttribute="centerY" secondItem="d88-XS-IH0" secondAttribute="centerY" id="Z6w-XR-JgG"/>
+                <constraint firstAttribute="trailing" secondItem="7Vr-ey-Tda" secondAttribute="trailing" constant="10" id="fK3-Ca-KaF"/>
+                <constraint firstItem="K48-fK-32G" firstAttribute="centerY" secondItem="d88-XS-IH0" secondAttribute="centerY" id="gxY-JP-pu9"/>
+                <constraint firstItem="7Vr-ey-Tda" firstAttribute="centerY" secondItem="K48-fK-32G" secondAttribute="centerY" id="pqi-Qd-7q5"/>
+                <constraint firstItem="d88-XS-IH0" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="21" id="sfa-sq-IPT"/>
+                <constraint firstItem="d88-XS-IH0" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" constant="15" id="vLq-Vc-asz"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="sfa-sq-IPT"/>
+                    <exclude reference="vLq-Vc-asz"/>
+                    <exclude reference="P9f-ws-wW9"/>
+                    <exclude reference="gxY-JP-pu9"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="278" y="136.5"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="title_decorate_like" width="27" height="27"/>
+    </resources>
+</document>
