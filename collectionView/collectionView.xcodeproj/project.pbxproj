@@ -23,6 +23,7 @@
 		9B6D8C621C7FED4E006D7362 /* SMCFMSectionFootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6D8C5F1C7FED4D006D7362 /* SMCFMSectionFootView.m */; };
 		9B6D8C6C1C802F3E006D7362 /* WFSCollectionViewFlemishBondLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6D8C691C802F3E006D7362 /* WFSCollectionViewFlemishBondLayout.m */; };
 		9B6D8C6D1C802F3E006D7362 /* WFSCollectionViewFlemishBondLayoutAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6D8C6B1C802F3E006D7362 /* WFSCollectionViewFlemishBondLayoutAttributes.m */; };
+		9B6D8C6F1C8057B4006D7362 /* show.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B6D8C6E1C8057B4006D7362 /* show.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		9B6D8C691C802F3E006D7362 /* WFSCollectionViewFlemishBondLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFSCollectionViewFlemishBondLayout.m; sourceTree = "<group>"; };
 		9B6D8C6A1C802F3E006D7362 /* WFSCollectionViewFlemishBondLayoutAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFSCollectionViewFlemishBondLayoutAttributes.h; sourceTree = "<group>"; };
 		9B6D8C6B1C802F3E006D7362 /* WFSCollectionViewFlemishBondLayoutAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFSCollectionViewFlemishBondLayoutAttributes.m; sourceTree = "<group>"; };
+		9B6D8C6E1C8057B4006D7362 /* show.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = show.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 		9B37E12A1C7F10A500372F40 /* collectionView */ = {
 			isa = PBXGroup;
 			children = (
+				9B6D8C6E1C8057B4006D7362 /* show.png */,
 				9B37E12E1C7F10A500372F40 /* AppDelegate.h */,
 				9B37E12F1C7F10A500372F40 /* AppDelegate.m */,
 				9B37E1311C7F10A500372F40 /* ViewController.h */,
@@ -194,6 +197,7 @@
 				9B37E1501C7F18CD00372F40 /* SMCFMSectionHeadView.xib in Resources */,
 				9B37E1361C7F10A500372F40 /* Main.storyboard in Resources */,
 				9B6D8C611C7FED4E006D7362 /* SMCFMSectionFootView.xib in Resources */,
+				9B6D8C6F1C8057B4006D7362 /* show.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
