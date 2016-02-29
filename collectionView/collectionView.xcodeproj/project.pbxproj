@@ -18,6 +18,8 @@
 		9B37E14F1C7F18CD00372F40 /* SMCFMSectionHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B37E14D1C7F18CD00372F40 /* SMCFMSectionHeadView.m */; };
 		9B37E1501C7F18CD00372F40 /* SMCFMSectionHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B37E14E1C7F18CD00372F40 /* SMCFMSectionHeadView.xib */; };
 		9B37E1541C7F1B2B00372F40 /* SMCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B37E1521C7F1B2B00372F40 /* SMCViewController.m */; };
+		9B5C59E11C83E34000D5D8E6 /* SMCFMCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B5C59DF1C83E34000D5D8E6 /* SMCFMCell.m */; };
+		9B5C59E21C83E34000D5D8E6 /* SMCFMCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B5C59E01C83E34000D5D8E6 /* SMCFMCell.xib */; };
 		9B6D8C5D1C7FE2FB006D7362 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6D8C5C1C7FE2FB006D7362 /* UIView+Extension.m */; };
 		9B6D8C611C7FED4E006D7362 /* SMCFMSectionFootView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B6D8C5E1C7FED4D006D7362 /* SMCFMSectionFootView.xib */; };
 		9B6D8C621C7FED4E006D7362 /* SMCFMSectionFootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6D8C5F1C7FED4D006D7362 /* SMCFMSectionFootView.m */; };
@@ -45,6 +47,9 @@
 		9B37E14E1C7F18CD00372F40 /* SMCFMSectionHeadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SMCFMSectionHeadView.xib; sourceTree = "<group>"; };
 		9B37E1511C7F1B2B00372F40 /* SMCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCViewController.h; sourceTree = "<group>"; };
 		9B37E1521C7F1B2B00372F40 /* SMCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCViewController.m; sourceTree = "<group>"; };
+		9B5C59DE1C83E34000D5D8E6 /* SMCFMCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCFMCell.h; sourceTree = "<group>"; };
+		9B5C59DF1C83E34000D5D8E6 /* SMCFMCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCFMCell.m; sourceTree = "<group>"; };
+		9B5C59E01C83E34000D5D8E6 /* SMCFMCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SMCFMCell.xib; sourceTree = "<group>"; };
 		9B6D8C5B1C7FE2FB006D7362 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		9B6D8C5C1C7FE2FB006D7362 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		9B6D8C5E1C7FED4D006D7362 /* SMCFMSectionFootView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SMCFMSectionFootView.xib; sourceTree = "<group>"; };
@@ -124,6 +129,9 @@
 				9B37E1471C7F187100372F40 /* SMCRelatedRecommendCell.h */,
 				9B37E1481C7F187100372F40 /* SMCRelatedRecommendCell.m */,
 				9B37E1491C7F187100372F40 /* SMCRelatedRecommendCell.xib */,
+				9B5C59DE1C83E34000D5D8E6 /* SMCFMCell.h */,
+				9B5C59DF1C83E34000D5D8E6 /* SMCFMCell.m */,
+				9B5C59E01C83E34000D5D8E6 /* SMCFMCell.xib */,
 				9B6D8C5E1C7FED4D006D7362 /* SMCFMSectionFootView.xib */,
 				9B6D8C5F1C7FED4D006D7362 /* SMCFMSectionFootView.m */,
 				9B6D8C601C7FED4D006D7362 /* SMCFMSectionFootView.h */,
@@ -195,6 +203,7 @@
 				9B37E1381C7F10A500372F40 /* Assets.xcassets in Resources */,
 				9B37E14B1C7F187100372F40 /* SMCRelatedRecommendCell.xib in Resources */,
 				9B37E1501C7F18CD00372F40 /* SMCFMSectionHeadView.xib in Resources */,
+				9B5C59E21C83E34000D5D8E6 /* SMCFMCell.xib in Resources */,
 				9B37E1361C7F10A500372F40 /* Main.storyboard in Resources */,
 				9B6D8C611C7FED4E006D7362 /* SMCFMSectionFootView.xib in Resources */,
 				9B6D8C6F1C8057B4006D7362 /* show.png in Resources */,
@@ -212,6 +221,7 @@
 				9B37E1301C7F10A500372F40 /* AppDelegate.m in Sources */,
 				9B37E14A1C7F187100372F40 /* SMCRelatedRecommendCell.m in Sources */,
 				9B37E12D1C7F10A500372F40 /* main.m in Sources */,
+				9B5C59E11C83E34000D5D8E6 /* SMCFMCell.m in Sources */,
 				9B37E1541C7F1B2B00372F40 /* SMCViewController.m in Sources */,
 				9B6D8C5D1C7FE2FB006D7362 /* UIView+Extension.m in Sources */,
 				9B6D8C6D1C802F3E006D7362 /* WFSCollectionViewFlemishBondLayoutAttributes.m in Sources */,

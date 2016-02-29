@@ -8,6 +8,7 @@
 
 #import "SMCViewController.h"
 #import "SMCRelatedRecommendCell.h"
+#import "SMCFMCell.h"
 #import "SMCFMSectionHeadView.h"
 #import "SMCFMSectionFootView.h"
 #import "WFSCollectionViewFlemishBondLayout.h"
@@ -32,7 +33,7 @@
     self.collectionViewLayout = [[WFSCollectionViewFlemishBondLayout alloc] init];
     self.collectionViewLayout.delegate = self;
     self.collectionViewLayout.numberOfElements = 3;
-    self.collectionViewLayout.highlightedCellHeight = 260.0f;
+    self.collectionViewLayout.highlightedCellHeight = 300.0f;
     self.collectionViewLayout.highlightedCellWidth = 0.0;
     
     UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:self.collectionViewLayout];
@@ -40,6 +41,7 @@
     collectionView.dataSource = self;
     collectionView.backgroundColor = [UIColor whiteColor];
     [collectionView registerNib:[UINib nibWithNibName:@"SMCRelatedRecommendCell" bundle:nil] forCellWithReuseIdentifier:@"cell"];
+    [collectionView registerNib:[UINib nibWithNibName:@"SMCFMCell" bundle:nil] forCellWithReuseIdentifier:@"cell1"];
     [collectionView registerNib:[UINib nibWithNibName:@"SMCFMSectionHeadView" bundle:nil]  forSupplementaryViewOfKind:WFSCollectionViewFlemishBondHeaderKind withReuseIdentifier:@"headView"];
     [collectionView registerNib:[UINib nibWithNibName:@"SMCFMSectionFootView" bundle:nil]  forSupplementaryViewOfKind:WFSCollectionViewFlemishBondFooterKind withReuseIdentifier:@"footView"];
     
@@ -54,15 +56,14 @@
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    
-    
     return 9;
 }
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    SMCRelatedRecommendCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
-    
+//    SMCRelatedRecommendCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
+     SMCFMCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell1" forIndexPath:indexPath];
+    [cell sizeToFit];
     return cell;
 }
 
@@ -82,7 +83,8 @@
         
         return footView;
     }
-    else{
+    else
+    {
         
     }
     return headView;
@@ -101,20 +103,15 @@
     else return CGSizeMake(CGRectGetWidth(self.collectionView.frame), 100);
 }
 
-//- (CGSize)collectionView:(UICollectionView *)collectionView layout:(WFSCollectionViewLayout *)collectionViewLayout estimatedSizeForFooterInSection:(NSInteger)section
-//{
-//    return CGSizeMake(CGRectGetWidth(self.collectionView.fWFSe), 40);
-//}
-
 - (WFSCollectionViewFlemishBondLayoutGroupDirection)collectionView:(UICollectionView *)collectionView layout:(WFSCollectionViewFlemishBondLayout *)collectionViewLayout highlightedCellDirectionForGroup:(NSInteger)group atIndexPath:(NSIndexPath *)indexPath
 {
     WFSCollectionViewFlemishBondLayoutGroupDirection direction;
     
-    if (indexPath.row % 2) {
-        direction = WFSCollectionViewFlemishBondLayoutGroupDirectionRight;
-    } else {
+//    if (indexPath.row % 2) {
+//        direction = WFSCollectionViewFlemishBondLayoutGroupDirectionRight;
+//    } else {
         direction = WFSCollectionViewFlemishBondLayoutGroupDirectionLeft;
-    }
+//    }
     
     return direction;
 }

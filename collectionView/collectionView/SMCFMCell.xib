@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" reuseIdentifier="" id="gTV-IL-0wX" customClass="SMCFMCell">
+            <rect key="frame" x="0.0" y="0.0" width="235" height="207"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="235" height="207"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat" translatesAutoresizingMaskIntoConstraints="NO" id="PpL-or-QcW">
+                        <rect key="frame" x="0.0" y="0.0" width="235" height="157"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="93" id="Tpd-oq-Hc2"/>
+                            <constraint firstAttribute="width" constant="93" id="uqg-xU-1hD"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Tpd-oq-Hc2"/>
+                                <exclude reference="uqg-xU-1hD"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="东吴大都督鲁肃前往荆州" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5PU-kz-cIa">
+                        <rect key="frame" x="0.0" y="186" width="235" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="pgZ-bn-4KY"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.66274509800000003" green="0.66274509800000003" blue="0.66274509800000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="corner_ad" translatesAutoresizingMaskIntoConstraints="NO" id="pvT-OM-hbX">
+                        <rect key="frame" x="196" y="0.0" width="39" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="39" id="RvA-zA-keV"/>
+                            <constraint firstAttribute="height" constant="20" id="W7I-CW-BRL"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="爱上超模2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FBg-Gq-tdw">
+                        <rect key="frame" x="0.0" y="165" width="235" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="Cyf-Ty-hz0"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.27058823529999998" green="0.27058823529999998" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="PpL-or-QcW" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="2BO-Bg-Pg4"/>
+                <constraint firstItem="5PU-kz-cIa" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="3en-cv-FyD"/>
+                <constraint firstAttribute="trailing" secondItem="FBg-Gq-tdw" secondAttribute="trailing" id="CZ7-RE-1fX"/>
+                <constraint firstItem="FBg-Gq-tdw" firstAttribute="top" secondItem="PpL-or-QcW" secondAttribute="bottom" constant="8" id="F5M-Zh-gI4"/>
+                <constraint firstAttribute="trailing" secondItem="PpL-or-QcW" secondAttribute="trailing" id="H9n-mI-EQ2"/>
+                <constraint firstAttribute="trailing" secondItem="5PU-kz-cIa" secondAttribute="trailing" id="ILd-DX-PuL"/>
+                <constraint firstItem="pvT-OM-hbX" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="LRG-SS-1xY"/>
+                <constraint firstItem="5PU-kz-cIa" firstAttribute="top" secondItem="FBg-Gq-tdw" secondAttribute="bottom" constant="5" id="P8g-WT-Gxn"/>
+                <constraint firstItem="5PU-kz-cIa" firstAttribute="top" secondItem="FBg-Gq-tdw" secondAttribute="bottom" constant="7.5" id="PoK-gx-day"/>
+                <constraint firstItem="FBg-Gq-tdw" firstAttribute="top" secondItem="PpL-or-QcW" secondAttribute="bottom" constant="8" id="V5a-rk-6EK"/>
+                <constraint firstItem="PpL-or-QcW" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="iFK-HX-a7V"/>
+                <constraint firstAttribute="trailing" secondItem="pvT-OM-hbX" secondAttribute="trailing" id="nCu-9g-blj"/>
+                <constraint firstAttribute="bottom" secondItem="5PU-kz-cIa" secondAttribute="bottom" constant="5" id="v6q-n0-Q13"/>
+                <constraint firstItem="FBg-Gq-tdw" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="xYC-L6-UgE"/>
+            </constraints>
+            <size key="customSize" width="235" height="223"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="F5M-Zh-gI4"/>
+                    <exclude reference="PoK-gx-day"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="contentLabel" destination="5PU-kz-cIa" id="sbE-Ov-k6j"/>
+                <outlet property="imageView" destination="PpL-or-QcW" id="rwy-jA-4u2"/>
+                <outlet property="titleLabel" destination="FBg-Gq-tdw" id="XLL-Za-scU"/>
+            </connections>
+            <point key="canvasLocation" x="498.5" y="205.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="cat" width="223" height="242"/>
+        <image name="corner_ad" width="68" height="39"/>
+    </resources>
+</document>
